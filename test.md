@@ -30,3 +30,45 @@ print("Hello, World!")
 [^1]:Markdown是一种纯文本标记语言
 [^2]:HyperText Markup Language 超文本标记语言
 [^T]:NEW WAY TO READ & WRITE MARKDOWN.
+
+> 区块
+> > 嵌套区块
+
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+
+```mermaid
+sequenceDiagram
+
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob : How about you?
+Bob-->>John : Jolly good!
+```
+
+```mermaid
+classDiagram
+
+  Class01 <|-- AveryLongClass: Cool
+  <<interface>> Class01
+  Class09-->C2: Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07: equals()
+  Class07: Object[] elementData
+  Class01: size()
+  Class01: int chimp
+  Class01: int gorilla
+  class Class10 {
+  <<service>>
+  int id
+  size()
+ }
+```
+![图片](C:/Users/Lenovo/Desktop/微信图片_20220601164600.png)
