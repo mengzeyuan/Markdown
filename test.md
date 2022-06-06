@@ -1,3 +1,12 @@
+Markdown 是一种轻量级标记语言，使用简单而且常用的标记符号作为语法，纯文本，兼容性强，排版简洁  
+Github、Gitlab等都支持Markdown
+
+markdown编辑、预览：markdown all in one
+格式检查工具：markdownlint
+画图工具：markdown preview mermaid support
+
+typora
+
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -50,6 +59,11 @@ Note right of John: Rational thoughts!
 John-->>Alice: Great!
 John->>Bob : How about you?
 Bob-->>John : Jolly good!
+alt condition1
+Alice->John: result1
+else condition2
+Alice->John: result2
+end
 ```
 
 ```mermaid
@@ -93,6 +107,6 @@ graph TD
   A[Christmas] -->|Get money| B(Go shopping)
   B --> C{Let me think}
   C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[fa:fa-car Car]
+  C -->|Two| E[/iPhone\]
+  C -->|Three| F[/Car/]
   ```
