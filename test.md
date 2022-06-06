@@ -34,10 +34,10 @@ print("Hello, World!")
 > 区块
 > > 嵌套区块
 
-| 左对齐 | 右对齐 | 居中对齐 |
-| :-----| ----: | :----: |
-| 单元格 | 单元格 | 单元格 |
-| 单元格 | 单元格 | 单元格 |
+| 左对齐标题 | 右对齐标题 | 居中对齐标题 |
+| :------| ------: | :------: |
+| 短文本 | 中等文本 | 稍微长一点的文本 |
+| 稍微长一点的文本 | 短文本 | 中等文本 |
 
 ```mermaid
 sequenceDiagram
@@ -70,5 +70,29 @@ classDiagram
   int id
   size()
  }
+
+ class Animal {
+        +String publicField
+        #Integer protectedField
+        ~Boolean packageField
+        -Long privateField
+        Double staticField$
+
+        +publicMethod() String
+        #protectedMethod() Integer
+        ~packageMethod() Boolean
+        -privateMethod() Long
+        +abstractMethod()* void
+        #staticMethod()$ char
+    }
 ```
 ![图片](20220601164600.png "测试图片")
+
+```mermaid
+graph TD
+  A[Christmas] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[fa:fa-car Car]
+  ```
